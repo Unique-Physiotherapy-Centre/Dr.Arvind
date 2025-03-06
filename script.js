@@ -1,43 +1,3 @@
-// const text1 = "Unique Physiotherapy Center";
-// const text2 = "Our Services";
-// const heading1 = document.getElementById("animated-heading");
-// const heading2 = document.getElementById("animated-services");
-
-// function animateText(element, text, speed, waitTime) {
-//     let index = 0;
-//     let deleting = false;
-
-//     function animate() {
-//         if (!deleting) {
-//             if (index < text.length) {
-//                 element.innerHTML = text.substring(0, index + 1);
-//                 index++;
-//                 setTimeout(animate, speed);
-//             } else {
-//                 setTimeout(() => {
-//                     deleting = true;
-//                     animate();
-//                 }, waitTime);
-//             }
-//         } else {
-//             if (index > 0) {
-//                 element.innerHTML = text.substring(0, index - 1);
-//                 index--;
-//                 setTimeout(animate, speed);
-//             } else {
-//                 deleting = false;
-//                 setTimeout(animate, 0);
-//             }
-//         }
-//     }
-
-//     animate();
-// }
-
-// animateText(heading1, text1, 100, 1500); // Animation for first heading
-// animateText(heading2, text2, 100, 1500); // Animation for "Our Services"
-
-
 document.addEventListener("DOMContentLoaded", function () {
 
     /*** Read More / Read Less Functionality ***/
@@ -98,5 +58,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     animateText(heading1, text1, 100, 1500); // Animation for first heading
     animateText(heading2, text2, 100, 1500); // Animation for "Our Services"
-    animateText(heading3, text3, 100, 1500);
+    animateText(heading3, text3, 100, 1500); // Animation for "About Us"
 });
