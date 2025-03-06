@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /*** Animated Text Functionality ***/
-    const text1 = "Unique Physiotherapy Center";
+    const text1 = "Unique Physiotherapy Centre";
     const text2 = "Our Services";
     const text3= "About Us";
     const heading1 = document.getElementById("animated-heading");
