@@ -28,7 +28,6 @@
 }
 
 /* Ensure full viewport height for better layout */
-/* Ensure full viewport height for better layout */
 .info {
     display: flex;
     align-items: center;
@@ -69,11 +68,11 @@
     margin-bottom: 5px; /* Reduce space between paragraphs */
 }
 
-.services h2{
+.services h2 {
     text-align: center;
 }
 
-.services{
+.services {
     background-color: rgba(108, 154, 240, 0.231);
 }
 
@@ -84,7 +83,7 @@
     border-radius: 10px; /* Optional: adds rounded corners */
 }
 
-
+/* About Section */
 .about-section {
     max-width: 1200px;
     margin: 50px auto;
@@ -94,23 +93,29 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .about-section h2 {
     color: #2c3e50;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
+
 .about-section p {
     font-size: 1.2em;
     color: #555;
     line-height: 1.8;
     margin-bottom: 20px;
 }
+
+/* Highlight Boxes */
 .about-section .highlights {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+
 .highlight-box {
     background: #3498db;
     color: white;
@@ -120,22 +125,36 @@
     max-width: 300px;
     text-align: center;
 }
-.highlight-box h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+
+/* Ensure each highlight box is on a new line on smaller screens */
+@media screen and (max-width: 768px) {
+    .about-section .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight-box {
+        width: 100%;
+        max-width: 90%;
+    }
 }
+
+/* Contact Information */
 .contact-info {
     margin-top: 30px;
 }
+
 .contact-info a {
     color: #3498db;
     text-decoration: none;
     font-weight: bold;
 }
+
 .contact-info a:hover {
     text-decoration: underline;
 }
 
+/* Carousel Image Styling */
 .carousel-inner img {
     width: 100%;
     height: 500px; /* Set a fixed height for a rectangular shape */
@@ -143,7 +162,7 @@
     border-radius: 10px; /* Optional: Rounded corners */
 }
 
-
+/* WhatsApp Floating Button */
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
@@ -167,6 +186,7 @@
     background-color: #1EBE57;
 }
 
+/* Responsive Fixes */
 @media screen and (max-width: 768px) {
     .info {
         flex-direction: column; /* Stack items vertically */
@@ -188,5 +208,3 @@
         text-align: center; /* Center align text for better appearance */
     }
 }
-
-
